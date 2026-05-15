@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary-500/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5 mb-5 no-underline">
               <span className="relative inline-block leading-none pb-1">
@@ -32,6 +32,7 @@ export default function Footer() {
                 { href: "/", label: "Anasayfa" },
                 { href: "/hakkimizda", label: "Hakkımızda" },
                 { href: "/iletisim", label: "İletişim" },
+                { href: "/bize-ulasin", label: "Bize Ulaşın" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -100,47 +101,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="text-sm font-bold uppercase tracking-wider text-accent mb-5">
-              Yasal Metinler
-            </h3>
-            <ul className="space-y-3">
-              {[
-                { href: "/kvkk-aydinlatma-metni", label: "KVKK Aydınlatma Metni" },
-                { href: "/gizlilik-politikasi", label: "Gizlilik Politikası" },
-                { href: "/kullanim-kosullari", label: "Kullanım Koşulları" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-slate-400 hover:text-primary-300 text-sm transition-colors duration-200 flex items-center gap-2 group"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-primary-600 group-hover:bg-primary-400 transition-colors" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-slate-500 text-sm">
+        <div className="border-t border-slate-800 mt-12 pt-8 flex items-center justify-center">
+          <p className="text-slate-500 text-sm text-center">
             &copy; {new Date().getFullYear()} Bantcım. Tüm hakları saklıdır.
           </p>
-          <div className="flex items-center gap-4">
-            <Link href="/kvkk-aydinlatma-metni" className="text-slate-600 text-xs hover:text-slate-400 transition-colors">
-              KVKK Aydınlatma Metni
-            </Link>
-            <span className="text-slate-700">·</span>
-            <Link href="/gizlilik-politikasi" className="text-slate-600 text-xs hover:text-slate-400 transition-colors">
-              Gizlilik Politikası
-            </Link>
-            <span className="text-slate-700">·</span>
-            <Link href="/kullanim-kosullari" className="text-slate-600 text-xs hover:text-slate-400 transition-colors">
-              Kullanım Koşulları
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

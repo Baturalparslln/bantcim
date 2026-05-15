@@ -143,7 +143,7 @@ export default function Hakkimizda() {
                   iş fırsatları oluşturmak için bizimle iletişime geçin.
                 </p>
                 <Link
-                  href="/iletisim"
+                  href="/bize-ulasin"
                   className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-primary-950 font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-sm"
                 >
                   İletişime Geçin

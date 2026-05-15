@@ -109,14 +109,14 @@ const audienceCards = [
     title: "Bant Almak İsteyenler İçin",
     description:
       "İhtiyacınıza uygun tedarikçilere ulaşın, teklifleri değerlendirin ve süreci daha kısa sürede yönetin.",
-    href: "/iletisim?subject=alis#surec-detayi",
+    href: "/bize-ulasin?subject=alis#surec-detayi",
     cta: "Bant Almak İstiyorum",
   },
   {
     title: "Bant Satmak İsteyenler İçin",
     description:
       "Ürünlerinizi ve hizmetlerinizi doğru alıcılara ulaştırın, yeni iş bağlantıları için görünürlüğünüzü artırın.",
-    href: "/iletisim?subject=satis#surec-detayi",
+    href: "/bize-ulasin?subject=satis#surec-detayi",
     cta: "Bant Satmak İstiyorum",
   },
 ];
@@ -170,7 +170,7 @@ export default function Home() {
 
             <div className="flex justify-center px-4 mb-14">
               <Link
-                href="/iletisim"
+                href="/bize-ulasin"
                 className="group bg-white text-primary-800 px-8 py-4 rounded-2xl font-bold flex items-center justify-center space-x-2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow-lg"
               >
                 <span>Bize Ulaşın</span>
@@ -183,10 +183,10 @@ export default function Home() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto px-2">
               {heroFeatures.map((f, i) => (
                 <ScrollReveal key={i} delay={(i + 1) * 100} direction="up">
-                  <div className="glass-card p-6 text-center">
+                  <div className="glass-card h-full p-6 text-center flex flex-col">
                     <div className="text-primary-200 mb-3 flex justify-center">{f.icon}</div>
                     <h3 className="text-base font-bold text-white mb-1.5">{f.title}</h3>
-                    <p className="text-primary-100/70 text-xs leading-relaxed">{f.desc}</p>
+                    <p className="text-primary-100/70 text-xs leading-relaxed mt-auto">{f.desc}</p>
                   </div>
                 </ScrollReveal>
               ))}
@@ -222,14 +222,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyCards.map((card, i) => (
               <ScrollReveal key={i} delay={(i % 3 + 1) * 100} direction="up">
-                <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover-lift group">
+                <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-100 hover-lift group h-full flex flex-col">
                   <div className="w-14 h-14 bg-primary-50 text-primary-700 rounded-2xl flex items-center justify-center mb-5 group-hover:bg-primary-700 group-hover:text-white transition-all duration-300">
                     {card.icon}
                   </div>
                   <h3 className="text-lg font-bold text-slate-900 mb-3">
                     {card.title}
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">
+                  <p className="text-slate-500 text-sm leading-relaxed mt-auto">
                     {card.desc}
                   </p>
                 </div>
@@ -316,7 +316,7 @@ export default function Home() {
                   iş ortaklarına güvenle ulaşabilirsiniz.
                 </p>
                 <Link
-                  href="/iletisim"
+                  href="/bize-ulasin"
                   className="inline-flex items-center justify-center bg-accent hover:bg-accent-hover text-primary-950 font-bold px-8 py-4 rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-sm"
                 >
                   Hemen İletişime Geçin

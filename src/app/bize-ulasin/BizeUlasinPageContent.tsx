@@ -51,7 +51,7 @@ const processContent = {
   },
 } as const;
 
-export default function ContactPageContent() {
+export default function BizeUlasinPageContent() {
   const searchParams = useSearchParams();
   const subjectParam = searchParams.get("subject");
   const allowedSubjects = new Set(["satis", "alis", "bilgi", "diger"]);
@@ -89,11 +89,11 @@ export default function ContactPageContent() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-28 text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
             <span className="bg-gradient-to-r from-white via-primary-100 to-primary-200 bg-clip-text text-transparent">
-              İletişim
+              Bize Ulaşın
             </span>
           </h1>
           <p className="text-primary-100/80 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Sorularınız, talepleriniz ve iş birliği fırsatları için bizimle iletişime geçin.
+            Taleplerinizi iletin, uygun konu başlığını seçin ve süreci bizimle başlatın.
           </p>
         </div>
 
@@ -143,50 +143,20 @@ export default function ContactPageContent() {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                      Bizimle İletişime Geçin
+                      Talebinizi Yazın
                     </h2>
                     <p className="text-slate-500 leading-relaxed text-sm">
-                      Konveyör bant alımı, satışı veya iş birliği süreçleri hakkında bilgi almak için bizimle iletişime geçebilirsiniz.
+                      Konveyör bant alımı, satışı veya genel iş birliği taleplerinizi form üzerinden bize iletebilirsiniz.
                     </p>
                   </div>
 
-                  <div className="space-y-5">
-                    <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 rounded-xl bg-primary-50 flex items-center justify-center shrink-0">
-                        <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-bold text-slate-900">E-posta</h4>
-                        <p className="text-slate-500 text-sm">Alan adı bağlandıktan sonra eklenecektir.</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 rounded-xl bg-primary-50 flex items-center justify-center shrink-0">
-                        <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-bold text-slate-900">Telefon</h4>
-                        <p className="text-slate-500 text-sm">05354912558</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-4">
-                      <div className="w-11 h-11 rounded-xl bg-primary-50 flex items-center justify-center shrink-0">
-                        <svg className="w-5 h-5 text-primary-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h4 className="text-sm font-bold text-slate-900">Adres</h4>
-                        <p className="text-slate-500 text-sm">İstanbul, Türkiye</p>
-                      </div>
-                    </div>
+                  <div className="rounded-3xl border border-primary-100 bg-primary-50/60 p-6">
+                    <h3 className="text-sm font-extrabold uppercase tracking-[0.18em] text-primary-700 mb-3">
+                      Bilgilendirme
+                    </h3>
+                    <p className="text-sm leading-relaxed text-slate-600">
+                      Form gönderimleri şu anda yalnızca gösterim amaçlıdır. Alan adı ve teknik altyapı tamamlandığında e-posta gönderim süreci aktif hâle getirilecektir.
+                    </p>
                   </div>
                 </div>
               </ScrollReveal>
@@ -299,9 +269,8 @@ export default function ContactPageContent() {
                     </button>
 
                     <p className="text-xs leading-relaxed text-slate-500">
-                      Bilgileriniz yalnızca sizinle iletişime geçmek amacıyla kullanılacaktır. Ayrıntılı bilgi için
-                      {" "}
-                      <a href="/kvkk-aydinlatma-metni" className="font-semibold text-primary-700 hover:text-primary-900">
+                      Bilgileriniz yalnızca sizinle iletişime geçmek amacıyla kullanılacaktır. Ayrıntılı bilgi için {" "}
+                      <a href="/kvkk" className="font-semibold text-primary-700 hover:text-primary-900">
                         KVKK Aydınlatma Metni
                       </a>
                       {" "}ve{" "}
