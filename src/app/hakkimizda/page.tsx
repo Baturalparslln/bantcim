@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "Hakkımızda | Bantcım",
+  description:
+    "Bantcım'ın vizyonunu, misyonunu ve konveyör bant sektörüne sunduğu profesyonel yaklaşımı keşfedin.",
+};
 
 export default function Hakkimizda() {
   return (
@@ -16,7 +23,7 @@ export default function Hakkimizda() {
             </span>
           </h1>
           <p className="text-primary-100/80 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            Bantcım olarak konveyör bant sektöründe köprü kuruyoruz.
+            Bantcım olarak konveyör bant sektöründe güvenilir bağlantılar kuruyoruz.
           </p>
         </div>
 
@@ -36,18 +43,17 @@ export default function Hakkimizda() {
               Biz Kimiz?
             </h2>
             <p className="text-slate-500 leading-relaxed text-base sm:text-lg mb-4">
-              Bantcım, konveyör bant sektöründe alıcılar ve satıcıları
-              buluşturan yenilikçi bir aracı platformudur. Havalimanlarında
-              valiz bantlarından market kasalarındaki ürün taşıma sistemlerine,
-              lojistik tesislerinden gıda üretim hatlarına kadar her türlü
-              konveyör bant ihtiyacı için doğru iş ortağını bulmanızı
-              sağlıyoruz.
+              Bantcım, konveyör bant sektöründe alıcılar ile satıcıları bir araya
+              getiren profesyonel bir platformdur. Havalimanı bagaj sistemlerinden
+              market taşıma hatlarına, lojistik tesislerinden gıda üretim
+              hatlarına kadar farklı kullanım alanları için doğru iş ortaklarına
+              ulaşmanızı kolaylaştırıyoruz.
             </p>
             <p className="text-slate-500 leading-relaxed text-base sm:text-lg">
-              Sektördeki deneyimimiz ve geniş ağımız sayesinde, hem bant
-              üreticilerine ve satıcılarına yeni müşteriler kazandırıyoruz hem
-              de alıcılara ihtiyaçlarına en uygun çözümlere ulaşma imkanı
-              sunuyoruz.
+              Sektördeki deneyimimiz ve güçlü iş ağımız sayesinde, satıcıların yeni
+              müşterilere ulaşmasına destek oluyor; alıcıların ise ihtiyaçlarına en
+              uygun çözümleri daha sağlıklı biçimde değerlendirmesine imkân
+              tanıyoruz.
             </p>
           </ScrollReveal>
 
@@ -79,11 +85,10 @@ export default function Hakkimizda() {
                   Vizyonumuz
                 </h3>
                 <p className="text-slate-500 leading-relaxed text-sm">
-                  Konveyör bant sektöründe Türkiye&apos;nin en güvenilir ve en çok
-                  tercih edilen buluşma noktası olmak. Alıcı ve satıcılar için
-                  şeffaf, hızlı ve güvenilir bir ticaret ortamı yaratmak. Her
-                  ölçekteki işletmenin doğru bant çözümüne kolayca
-                  ulaşabilmesini sağlamak.
+                  Konveyör bant sektöründe Türkiye&apos;nin güvenilir ve öncelikli
+                  başvuru noktası olmak. Alıcılar ile satıcılar için şeffaf,
+                  hızlı ve sürdürülebilir bir iş ortamı oluşturmak. Her ölçekteki
+                  işletmenin doğru bant çözümüne kolaylıkla ulaşmasını sağlamak.
                 </p>
               </div>
             </ScrollReveal>
@@ -109,11 +114,11 @@ export default function Hakkimizda() {
                   Misyonumuz
                 </h3>
                 <p className="text-slate-500 leading-relaxed text-sm">
-                  Konveyör bant alıcılarını ve satıcılarını etkili bir şekilde
-                  buluşturarak, sektördeki ticaret süreçlerini hızlandırmak ve
-                  kolaylaştırmak. Her iki tarafın da ihtiyaçlarını karşılayan
-                  sürdürülebilir bir ekosistem oluşturmak. Teknoloji ve güven
-                  ile sektörü ileriye taşımak.
+                  Konveyör bant alıcıları ile satıcılarını etkili biçimde bir araya
+                  getirerek ticaret süreçlerini kolaylaştırmak ve hızlandırmak.
+                  Her iki tarafın ihtiyaçlarını gözeten sürdürülebilir bir ekosistem
+                  oluşturmak. Teknoloji, güven ve erişilebilirlik ile sektöre değer
+                  katmak.
                 </p>
               </div>
             </ScrollReveal>
@@ -134,7 +139,8 @@ export default function Hakkimizda() {
                   Birlikte Çalışalım
                 </h2>
                 <p className="text-primary-100/80 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Konveyör bant sektöründe yerinizi almak ve doğru iş ortaklarına ulaşmak için hemen iletişime geçin.
+                  Konveyör bant sektöründe doğru iş ortaklarıyla tanışmak ve yeni
+                  iş fırsatları oluşturmak için bizimle iletişime geçin.
                 </p>
                 <Link
                   href="/iletisim"

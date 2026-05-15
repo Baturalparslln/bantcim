@@ -27,7 +27,8 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2.5 shrink-0 lg:justify-self-start no-underline">
             <span className="relative inline-block leading-none pb-1">
               <span className="block text-[1.8rem] font-black tracking-[-0.06em] text-primary-900">
-                Bant<span className="text-primary-500">cım</span>
+                Bant<span className="text-primary-500">c</span>
+                <span className="ml-[0.06em] text-primary-500">ım</span>
               </span>
               <span className="absolute left-0 right-0 bottom-0 mx-auto h-0.5 w-16 rounded-full bg-gradient-to-r from-primary-500 via-primary-300 to-accent" />
             </span>

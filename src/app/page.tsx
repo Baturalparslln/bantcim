@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "Ana Sayfa | Bantcım",
+  description:
+    "Konveyör bant sektöründe alıcılar ile satıcıları buluşturan, hızlı iletişim ve güven odaklı profesyonel platform.",
+};
 
 const heroFeatures = [
   {
@@ -9,7 +16,7 @@ const heroFeatures = [
       </svg>
     ),
     title: "Güvenilir Platform",
-    desc: "Doğrulanmış satıcılar ve güvenilir alıcılarla güvenle iş yapın.",
+    desc: "Doğrulanmış satıcılar ve güvenilir alıcılarla profesyonel iş birlikleri kurun.",
   },
   {
     icon: (
@@ -18,7 +25,7 @@ const heroFeatures = [
       </svg>
     ),
     title: "Geniş Ağ",
-    desc: "Türkiye genelinde yüzlerce bant satıcısına tek platformdan ulaşın.",
+    desc: "Türkiye genelindeki çok sayıda bant satıcısına tek platform üzerinden ulaşın.",
   },
   {
     icon: (
@@ -27,7 +34,7 @@ const heroFeatures = [
       </svg>
     ),
     title: "Hızlı Eşleşme",
-    desc: "İhtiyacınıza uygun bant satıcısını veya alıcısını hızlıca bulun.",
+    desc: "İhtiyacınıza uygun satıcı veya alıcı profillerine kısa sürede erişin.",
   },
   {
     icon: (
@@ -36,7 +43,7 @@ const heroFeatures = [
       </svg>
     ),
     title: "Uzman Destek",
-    desc: "Konveyör bant sektöründe deneyimli ekibimiz her adımda yanınızda.",
+    desc: "Sektör deneyimine sahip ekibimiz, sürecin her aşamasında size destek olur.",
   },
 ];
 
@@ -48,7 +55,7 @@ const whyCards = [
       </svg>
     ),
     title: "Doğrulanmış Satıcılar",
-    desc: "Platformdaki tüm satıcılar titizlikle incelenir ve doğrulanır. Güvenilir iş ortaklarıyla çalışmanın rahatlığını yaşayın.",
+    desc: "Platformda yer alan satıcılar titizlikle incelenir ve doğrulanır. Böylece güvenilir iş ortaklarıyla çalışma imkânı elde edersiniz.",
   },
   {
     icon: (
@@ -57,7 +64,7 @@ const whyCards = [
       </svg>
     ),
     title: "Kolay Arama",
-    desc: "Gelişmiş filtreleme seçenekleriyle ihtiyacınıza uygun konveyör bant tedarikçisini saniyeler içinde bulun.",
+    desc: "Gelişmiş filtreleme seçenekleri sayesinde ihtiyacınıza uygun konveyör bant tedarikçisini kısa sürede belirleyin.",
   },
   {
     icon: (
@@ -66,7 +73,7 @@ const whyCards = [
       </svg>
     ),
     title: "Rekabetçi Fiyatlar",
-    desc: "Birden fazla satıcının tekliflerini karşılaştırarak en uygun fiyatlı konveyör bant çözümüne ulaşın.",
+    desc: "Birden fazla teklif arasından karşılaştırma yaparak bütçenize uygun çözümü değerlendirin.",
   },
   {
     icon: (
@@ -75,7 +82,7 @@ const whyCards = [
       </svg>
     ),
     title: "Sektör Odaklı",
-    desc: "Gıda, lojistik, madencilik, havalimanı ve daha birçok sektörde konveyör bant çözümlerini keşfedin.",
+    desc: "Gıda, lojistik, madencilik, havalimanı ve daha birçok sektör için uygun bant çözümlerini inceleyin.",
   },
   {
     icon: (
@@ -84,7 +91,7 @@ const whyCards = [
       </svg>
     ),
     title: "Hızlı Süreç",
-    desc: "Uzun araştırmalara son. Bantcım ile doğru iş ortağını bulmak saatler sürer, haftalar değil.",
+    desc: "Uzun araştırma süreçlerini kısaltın. Doğru iş ortağına daha hızlı ve daha planlı biçimde ulaşın.",
   },
   {
     icon: (
@@ -93,7 +100,45 @@ const whyCards = [
       </svg>
     ),
     title: "Tamamen Ücretsiz",
-    desc: "Bantcım平台上 bilgilenmek ve iletişim kurmak tamamen ücretsizdir. Gizli ücret yok, sürpriz yok.",
+    desc: "Bantcım'da bilgi almak ve iletişim kurmak tamamen ücretsizdir. Ek ücret, gizli maliyet veya sürpriz ödeme bulunmaz.",
+  },
+];
+
+const audienceCards = [
+  {
+    title: "Bant Almak İsteyenler İçin",
+    description:
+      "İhtiyacınıza uygun tedarikçilere ulaşın, teklifleri değerlendirin ve süreci daha kısa sürede yönetin.",
+    href: "/iletisim?subject=alis#surec-detayi",
+    cta: "Bant Almak İstiyorum",
+  },
+  {
+    title: "Bant Satmak İsteyenler İçin",
+    description:
+      "Ürünlerinizi ve hizmetlerinizi doğru alıcılara ulaştırın, yeni iş bağlantıları için görünürlüğünüzü artırın.",
+    href: "/iletisim?subject=satis#surec-detayi",
+    cta: "Bant Satmak İstiyorum",
+  },
+];
+
+const processSteps = [
+  {
+    step: "01",
+    title: "İhtiyacınızı Paylaşın",
+    description:
+      "Alım, satım veya iş birliği talebinizi kısa ve net biçimde iletin.",
+  },
+  {
+    step: "02",
+    title: "Uygun Eşleşmeleri Değerlendirin",
+    description:
+      "Sektörünüze, ürün tipinize ve beklentinize uygun bağlantıları belirleyin.",
+  },
+  {
+    step: "03",
+    title: "Doğrudan İletişime Geçin",
+    description:
+      "Süreci hızlandıracak görüşmeleri başlatın ve iş fırsatlarını güvenle yönetin.",
   },
 ];
 
@@ -117,9 +162,10 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-primary-100/90 mb-10 leading-relaxed max-w-3xl mx-auto font-medium px-4">
-              Bantcım ile doğru konveyör bant tedarikçisini veya alıcısını bulun.
-              Havalimanlarından marketlere, lojistikten gıda sektörüne — tüm bant
-              ihtiyaçlarınız tek platformda.
+              Bantcım ile ihtiyaçlarınıza uygun konveyör bant tedarikçilerine ve
+              alıcılara tek noktadan ulaşın. Havalimanlarından marketlere,
+              lojistikten gıda üretimine kadar tüm bant ihtiyaçları için
+              profesyonel bir çözüm sunuyoruz.
             </p>
 
             <div className="flex justify-center px-4 mb-14">
@@ -169,7 +215,7 @@ export default function Home() {
               ?
             </h2>
             <p className="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
-              Konveyör bant sektöründe alıcı ve satıcıları güvenle buluşturan profesyonel platform.
+              Konveyör bant sektöründe alıcılar ile satıcıları güvenilir, hızlı ve düzenli bir yapıda buluşturan profesyonel platform.
             </p>
           </ScrollReveal>
 
@@ -193,6 +239,65 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-20 md:py-28 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-5">
+              Ne Yapmak İstiyorsunuz?
+            </h2>
+            <p className="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+              Sizi doğru sürece hızlıca yönlendirelim. Aşağıdaki başlıklardan size uygun olan seçeneği seçin.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {audienceCards.map((card, i) => (
+              <ScrollReveal key={card.title} delay={(i + 1) * 100} direction="up">
+                <div className="h-full rounded-3xl border border-slate-200 bg-slate-50 p-8 md:p-10 shadow-sm">
+                  <h3 className="text-2xl font-extrabold text-slate-900 mb-4">{card.title}</h3>
+                  <p className="text-slate-500 leading-relaxed text-sm sm:text-base mb-8">
+                    {card.description}
+                  </p>
+                  <Link
+                    href={card.href}
+                    className="inline-flex items-center justify-center bg-primary-800 hover:bg-primary-950 text-white font-bold px-6 py-3 rounded-2xl transition-colors duration-300 text-sm"
+                  >
+                    {card.cta}
+                  </Link>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 md:py-28 bg-slate-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <ScrollReveal className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-900 mb-5">
+              Nasıl Çalışır?
+            </h2>
+            <p className="text-slate-500 max-w-2xl mx-auto text-base sm:text-lg leading-relaxed">
+              Süreci karmaşıklaştırmadan, ihtiyaç ile doğru bağlantı arasında hızlı bir köprü kuruyoruz.
+            </p>
+          </ScrollReveal>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {processSteps.map((step, i) => (
+              <ScrollReveal key={step.step} delay={(i + 1) * 100} direction="up">
+                <div className="h-full rounded-3xl bg-white border border-slate-100 p-8 shadow-sm">
+                  <span className="inline-flex items-center justify-center rounded-full bg-primary-50 text-primary-700 font-extrabold text-sm px-4 py-2 mb-6">
+                    {step.step}
+                  </span>
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-3">{step.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{step.description}</p>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -207,8 +312,8 @@ export default function Home() {
                   Konveyör Bant İhtiyacınız mı Var?
                 </h2>
                 <p className="text-primary-100/80 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
-                  İster satıcı olun ister alıcı — Bantcım ile doğru iş ortağına
-                  ulaşmak hiç bu kadar kolay olmamıştı.
+                  İster satıcı ister alıcı olun, Bantcım ile ihtiyaçlarınıza uygun
+                  iş ortaklarına güvenle ulaşabilirsiniz.
                 </p>
                 <Link
                   href="/iletisim"
